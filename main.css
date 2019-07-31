@@ -100,7 +100,28 @@ margin；0 auto
 }
 .header .logo{
     font-size:30px;
-
+    color:red;
+    -webkit-animation: twinkling 1s infinite ease-in-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@-webkit-keyframes twinkling{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes twinkling{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .header .search-bar{
     border: 2px solid #dd182b;
